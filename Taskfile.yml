@@ -1,0 +1,27 @@
+version: '3'
+
+tasks:
+  install:
+    desc: Install dependencies
+    cmds:
+      - uv sync
+
+  run:
+    desc: Run the application
+    cmds:
+      - uv run sub-mvp
+
+  test:
+    desc: Run tests
+    cmds:
+      - uv run pytest
+
+  lint:
+    desc: Lint the code
+    cmds:
+      - uv run ruff check .
+
+  format:
+    desc: Format the code
+    cmds:
+      - uv run ruff format .
