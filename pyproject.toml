@@ -1,0 +1,23 @@
+[project]
+name = "sub-mvp"
+version = "0.1.0"
+description = "CLI MVP tool to generate subtitles for videos optimized for YouTube"
+readme = "README.md"
+authors = [
+    { name = "Igor Wnek", email = "contact@ikcode.dev" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+sub-mvp = "sub_mvp.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.9.11,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.1",
+    "ruff>=0.14.6",
+]
