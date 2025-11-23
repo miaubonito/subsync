@@ -1,5 +1,9 @@
 version: '3'
 
+env:
+  # Unset VIRTUAL_ENV to avoid uv warnings when the shell has a stale environment activated
+  VIRTUAL_ENV: ''
+
 tasks:
   install:
     desc: Install dependencies
