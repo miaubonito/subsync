@@ -1,6 +1,6 @@
-# Subsync
+# SubSync
 
-This is MVP version of the app that I'm going to use to generate subtitles for YouTube (or any other) videos.
+The SubSync is a CLI application written in Python. In the MVP version of the app locally installed models will be used to transcribe videos and translate subtitles to another language. The main goal of SubSync app is to quickly prepare subtitles and their translations for YouTube videos.
 
 ## Run the project
 
