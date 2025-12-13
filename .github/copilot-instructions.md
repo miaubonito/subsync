@@ -49,6 +49,7 @@ For any other operations, use `uv` directly:
 
 ### Python Style
 
+- Favor pragmatic, readable code over clever abstractions - simplicity wins
 - Follow PEP 8 style guide
 - Use type hints for all function arguments and return values
 - Write docstrings for modules, classes, and functions
@@ -72,4 +73,6 @@ For any other operations, use `uv` directly:
 
 - Place tests in the project root or `tests/` directory
 - Use pytest conventions
-- Test subtitle formatting rules and timing validation
+- Write tests when adding logic, especially to cover edge cases
+- Prefer unit tests for pure functions
+- Keep tests deterministic - avoid network calls unless explicitly requested and properly isolated
